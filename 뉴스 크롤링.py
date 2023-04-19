@@ -85,5 +85,5 @@ def make_news(code_list,number,keyword):
   return df
 
 Yoon=make_news(co,1,"윤석열")
-
+#df를 csv 파일로 추출 - utf-8 필수 안하면 한글 깨짐
 Yoon.to_csv('Yoon.csv',encoding='utf-8-sig',index=False)
